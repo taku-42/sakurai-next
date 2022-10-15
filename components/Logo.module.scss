@@ -1,3 +1,6 @@
+@use "../styles/variables.scss" as var;
+@use "../styles/mediaquery.scss" as mq;
+
 .wrapper {
   height: 354*0.6px;
   width: 204*0.6px;
@@ -5,6 +8,11 @@
   top: 30px;
   left: 50px;
   z-index: 100;
+
+  @include mq.media-sp {
+    top: 10px;
+    left: 10px;
+  }
 
   .image {
     width: 100%;

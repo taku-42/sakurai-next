@@ -23,17 +23,52 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  width: 50%;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    padding-bottom: 44%;
+    display: block;
+  }
 
   .tel {
     display: flex;
     gap: 2rem;
     align-items: center;
-    // font-weight: bold;
+
+    @include mq.media-sp {
+      width: 80%;
+      font-size: 1rem;
+    }
+  }
+
+  @include mq.media-sp {
+    width: 100%;
+  }
+}
+
+.right {
+  width: 50%;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    padding-bottom: 67%;
+    display: block;
+  }
+
+  @include mq.media-sp {
+    width: 100%;
   }
 }
 
 .copyright {
   margin: 2rem 0;
+  display: flex;
+  justify-content: center;
   p {
     margin: 0;
     padding: 0;

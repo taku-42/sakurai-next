@@ -20,12 +20,13 @@
     background-color: transparent;
     border: none;
     text-align: left;
-    padding: 2rem 1.5rem;
+    padding: 2rem 4rem 2rem 1.5rem;
     border: 1px solid #ddd;
     position: relative;
     transition: all 0.2s ease;
     border: none;
     border-bottom: dotted 1px #000;
+    display: flex;
 
     &::before {
       content: "";
@@ -60,5 +61,6 @@
   time {
     font-size: .8rem;
     margin-right: 2rem;
+    white-space: nowrap;
   }
 }

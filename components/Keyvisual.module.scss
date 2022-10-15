@@ -1,6 +1,13 @@
+@use "../styles/variables.scss" as var;
+@use "../styles/mediaquery.scss" as mq;
+
 .wrapper {
   height: 700px;
   width: 100%;
+
+  @include mq.media-sp {
+    height: 550px;
+  }
 
   .image {
     width: 100%;
@@ -9,22 +16,6 @@
 
     img {
       border-top-left-radius: 300px;
-      object-fit: cover;
-    }
-  }
-}
-
-.wrapperReverse {
-  height: 700px;
-  width: 100%;
-
-  .image {
-    width: 100%;
-    height: 100%;
-    position: relative;
-
-    img {
-      border-top-right-radius: 300px;
       object-fit: cover;
     }
   }

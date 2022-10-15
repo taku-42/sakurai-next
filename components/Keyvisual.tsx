@@ -20,7 +20,7 @@ export default function Keyvisual({...props} : Props) {
     return (
       <div className={styles.wrapper}>
         <div className={styles.image}>
-          <Image src="/keyvisual-1.webp" layout="fill"  alt="" />
+          <Image src="/keyvisual-2.webp" layout="fill"  alt="" />
         </div>
       </div>
     );
