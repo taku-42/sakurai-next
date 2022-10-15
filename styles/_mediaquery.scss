@@ -1,0 +1,23 @@
+@use "variables" as var;
+
+$media-sp: "screen and (max-width:#{var.$breakpoint - 1px})";
+$media-pc: "screen and (min-width: #{var.$breakpoint})";
+$media-pc-min: "screen and (min-width: #{var.$breakpoint})";
+
+@mixin media-pc {
+  @media #{$media-pc} {
+    @content;
+  }
+}
+
+@mixin media-pc-min {
+  @media #{$media-pc} {
+    @content;
+  }
+}
+
+@mixin media-sp {
+  @media #{$media-sp} {
+    @content;
+  }
+}

@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gen:types": "npx microcms-typescript data/cms-schema types/cms-response.ts"
   },
   "dependencies": {
+    "dayjs": "^1.11.5",
+    "microcms-js-sdk": "^2.2.1",
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.54.9"
   },
   "devDependencies": {
     "@types/node": "18.7.18",

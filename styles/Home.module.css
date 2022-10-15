@@ -1,5 +1,10 @@
-.container {
-  padding: 0 2rem;
+.head {
+  position: relative;
+}
+
+.layoutType01 {
+  display: flex;
+  gap: 2rem;
 }
 
 .main {

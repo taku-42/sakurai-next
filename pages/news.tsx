@@ -22,24 +22,15 @@ type Props = {
 export default function Home({...props} : Props) {
 
   return (
-    <Container>
-      <div className={styles.head}>
+      <Container>
         <Header />
-        <Logo />
-        <Keyvisual reverse={false} />   
-      </div>
+        <div className={styles.layoutType01}> 
+          <Keyvisual reverse={true} />
+          <Title ja="ニュース" en="News" />
+        </div>
 
-      <Title ja="お知らせ" en="NEWS"/>
-      <NewsList news={props.news} />
-      <PictureGrid />
-{/* 
-      <div className={styles.layoutType01}> 
-        <Keyvisual reverse={true} />
-        <Title ja="クリニックの情報" en="Information" />
-      </div> */}
-      <Title ja="アクセス" en="ACCESS"/>
-      <Access />
-    </Container>
+        <NewsList news={props.news} />
+      </Container>
   )
 }
 
@@ -47,10 +38,6 @@ export async function getStaticProps() {
   const res = await microCmsClient
     .get({
       endpoint: "news",
-      queries: {
-        orders: "-date.start",
-        limit: 4,
-      },
     })
     .catch((err) => console.log(err));
   console.log(res);

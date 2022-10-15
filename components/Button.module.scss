@@ -1,0 +1,32 @@
+@use "../styles/variables" as var;
+
+.wrapper {
+  padding: 1rem 2.5rem;
+  display: inline-block;
+  border-radius: 6px;
+  cursor: pointer;
+  width: max-content;
+  background-color: var.$primary;
+  color: black;
+
+  .inner {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+button.wrapper {
+  border: 0;
+}
+
+.icon {
+  width: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    padding-bottom: 100%;
+    display: block;
+  }
+}

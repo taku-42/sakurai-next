@@ -1,0 +1,64 @@
+@use "../styles/variables" as var;
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.inner {
+  border-top: dotted 1px #000;
+  width: 100%;
+  padding: 0;
+}
+
+.item {
+  // border-bottom: dotted 1px #000;
+  list-style: none;
+
+  button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 2rem 1.5rem;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: all 0.2s ease;
+    border: none;
+    border-bottom: dotted 1px #000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 25px;
+      top: 42px;
+      display: block;
+      width: 13px;
+      height: 1px;
+      background: #000;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 31px;
+      top: 36px;
+      display: block;
+      width: 1px;
+      height: 13px;
+      background: #000;
+    }
+  }
+
+  .answer {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #f7f7f7;
+  }
+
+  time {
+    font-size: .8rem;
+    margin-right: 2rem;
+  }
+}

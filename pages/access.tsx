@@ -11,7 +11,7 @@ import Keyvisual from "../components/Keyvisual";
 import NewsList from "../components/NewsList";
 import PictureGrid from "../components/PictureGrid";
 import Container from "../components/Container";
-import Title from "../components/Title";
+import PageTitle from "../components/PageTitle";
 import Access from "../components/Access";
 
 type Props = {
@@ -26,18 +26,13 @@ export default function Home({...props} : Props) {
       <div className={styles.head}>
         <Header />
         <Logo />
-        <Keyvisual reverse={false} />   
+        {/* <div className={styles.layoutType01}> 
+          <Keyvisual reverse={true} />
+          <Title ja="アクセス" en="access" />
+        </div> */}
+        <PageTitle ja="アクセス" en="access" url="pageTitle-1.webp" />
       </div>
 
-      <Title ja="お知らせ" en="NEWS"/>
-      <NewsList news={props.news} />
-      <PictureGrid />
-{/* 
-      <div className={styles.layoutType01}> 
-        <Keyvisual reverse={true} />
-        <Title ja="クリニックの情報" en="Information" />
-      </div> */}
-      <Title ja="アクセス" en="ACCESS"/>
       <Access />
     </Container>
   )
@@ -47,10 +42,6 @@ export async function getStaticProps() {
   const res = await microCmsClient
     .get({
       endpoint: "news",
-      queries: {
-        orders: "-date.start",
-        limit: 4,
-      },
     })
     .catch((err) => console.log(err));
   console.log(res);

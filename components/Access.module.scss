@@ -1,0 +1,36 @@
+@use "../styles/variables.scss" as var;
+@use "../styles/mediaquery.scss" as mq;
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+  align-items: center;
+
+  @include mq.media-sp {
+    flex-direction: column;
+  }
+}
+
+.map {
+  width: 60%;
+
+  @include mq.media-sp {
+    width: 100%;
+  }
+}
+
+.inner dl {
+  display: flex;
+
+  dt {
+    width: 5rem;
+    font-weight: bold;
+  }
+}
+
+.wrapper iframe {
+  border: none;
+  width: 100%;
+}
+

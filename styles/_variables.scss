@@ -1,0 +1,85 @@
+$content-widths: (
+  mobile: 540px,
+  tablet: 720px,
+  laptop: 960px,
+  default: 1320px,
+);
+
+// $breakpoints: (
+//     mobile: 576px,
+//     tablet: 768px,
+//     laptop: 1024px,
+//     laptop-l: 1440px
+// );
+$breakpoint: 780px;
+
+$font-family-sans-serif: "Noto Sans JP", "Noto Sans", "Roboto",
+  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic,
+  "Yu Gothic", "メイリオ", Meiryo, Verdana, sans-serif;
+$font-family-serif: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN",
+  "Hiragino Mincho Pro", "Times New Roman", "游明朝", YuMincho, "メイリオ",
+  Meiryo, Georgia, serif;
+
+$font-size-root: 14px;
+$font-size-root-sp: 14px;
+
+//colors
+$purple: #9eb4fd;
+$deep-purple: #6c63ff;
+$green: #068f9d;
+$orange: #ffab58;
+$navy: #2a3a67;
+$gray: #a3a3a3;
+$light-gray: #eff4fa;
+$white: #fff;
+$black: #363636;
+
+$primary: rgb(142, 194, 152, 0.63);
+$secondary: $deep-purple;
+$accent: $orange;
+
+$bg-color: $light-gray;
+$bg-color-light: #f8fbff;
+
+$font-color-body: #2f3038;
+$link-hover-color: inherit;
+
+$text-muted: $gray;
+
+// font-size
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1;
+$small-font-size: 0.875em;
+$global-menu-font-size: $font-size-base * 0.9;
+
+// font-weight
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-light: 200;
+
+// border
+$border-color: #a6a6a6;
+$border-radius: 8px;
+$border-radius-sm: 5px;
+$border-radius-lg: 12px;
+
+// button
+$input-btn-padding-y: 1rem;
+$input-btn-padding-y-lg: 2rem;
+$btn-padding-y-sm: 0.625rem;
+$btn-font-size-lg: 1rem;
+$btn-font-size-sm: 1rem;
+$btn-border-radius-lg: 10px;
+$btn-border-radius-sm: 10px;
+
+//z-index
+$z-index-global-menu: 99;
+$z-index-global-menu-hamburger: $z-index-global-menu + 1;
+
+//header
+$header-height: 100px;
